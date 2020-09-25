@@ -11,7 +11,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh '. ~/.nvm/nvm.sh'
                sh 'nvm install node'               
             }
         }
