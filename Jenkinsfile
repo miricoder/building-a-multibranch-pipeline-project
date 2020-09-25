@@ -13,9 +13,7 @@ pipeline {
             steps {
                sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash'
                sh '. ~/.nvm/nvm.sh'
-               sh 'nvm install node'
-               sh 'node -e "console.log('Running Node.js ' + process.version)"'
-               
+               sh 'nvm install node'               
             }
         }
         stage('Test') {
