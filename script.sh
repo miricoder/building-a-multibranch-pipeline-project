@@ -1,0 +1,1 @@
+sudo npm install --unsafe-perm=true --allow-roo
